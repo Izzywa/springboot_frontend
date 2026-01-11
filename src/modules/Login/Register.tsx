@@ -24,7 +24,7 @@ export default function Register() {
     }
   }
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       Register Page
       <form id="authenticationForm" className="flex flex-col gap-3 w-80">
         <Input type="email" placeholder="Email" ref={emailRef} />

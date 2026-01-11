@@ -25,7 +25,7 @@ export default function Login() {
     }
   }
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       Login Page
       <form id="authenticationForm" className="flex flex-col gap-3 w-80">
         <Input type="email" placeholder="Email" ref={emailRef} />

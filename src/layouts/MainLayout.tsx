@@ -1,19 +1,14 @@
 import { Outlet } from "react-router-dom";
-import { cn } from "@/lib/utils";
 
 type MainLayoutProps = {
   container?: boolean;
 };
 
-export const MainLayout: React.FC<MainLayoutProps> = ({
-  container = false,
-}) => (
-  <div
-    className={cn(
-      "flex flex-col flex-1 w-full px-[5px]",
-      container && "max-w-8xl container mx-auto "
-    )}
-  >
+export const MainLayout: React.FC<MainLayoutProps> = () => (
+  <div className="flex flex-col flex-1 w-full">
+    <div className="flex flex-col justify-center items-center flex-1 w-full min-h-[90vh] border">
     <Outlet />
+    </div>
   </div>
+
 );
