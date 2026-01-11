@@ -8,10 +8,7 @@ export const useAuthStore = create<AuthStore>()(
       auth: null,
       setAuth: (auth) => set({ auth }),
       clearAuth: () => set({ auth: null }),
-      getUser: () => get().auth,
-      getAccessToken: () => get().auth?.access_token || null,
-      getRefreshToken: () => get().auth?.refresh_token || null,
-      getExpiresIn: () => get().auth?.expires_in || 0,
+      getUser: () => get().auth
     }),
     {
       name: 'auth-storage',
